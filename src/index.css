@@ -1,13 +1,423 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter var',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar {
+  padding: 12px !important;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+
+.shadow {
+  box-shadow: 0 0 1rem rgb(0 0 0 / 15%) !important;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-nav > li {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+nav .nav-link.active {
+  color: #000;
+  font-weight: 650 !important;
+}
+/* .login-button, .register-button {
+
+  border-radius: 25px !important;
+} */
+.btn{
+  line-height:2;
+}
+.nav-link{
+  color:rgb(75, 70, 70) !important;
+}
+
+
+
+.card {
+ 
+  border-radius: 10px
+}
+
+.c-details span {
+  font-weight: 300;
+  font-size: 13px
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px
+}
+
+.badge span {
+  background-color: #fffbec;
+  width: 60px;
+  height: 25px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  display: flex;
+  color: #fed85d;
+  justify-content: center;
+  align-items: center
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px
+}
+
+.progress div {
+  background-color: red
+}
+
+.text1 {
+  font-size: 14px;
+  font-weight: 600
+}
+
+.text2 {
+  line-height: 16px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #8A8A8A;
+  font-size:0.8rem;
+}
+
+.apply-now{
+  text-decoration: none;
+}
+
+.main-content{
+ 
+  margin-top:40px;
+
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+.form-companyregistration{
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.heading-container {
+  border-bottom: solid 1px #d1d7dc;
+}
+.form-container {
+  margin-top: 30px;
+  /* border-bottom: solid 1px #d1d7dc; */
+  padding-bottom: 10px;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.login-footer {
+    padding-top:18px;
+    border-top: solid 1px #d1d7dc;
+    text-align: center;
+}
+.login-link{
+    font-weight: 600;
+}
+.heading{
+text-align:center;
+  font-size:1.2rem !important;
+}
+.company-info{
+  margin-top:25px !important;
+}
+
+
+
+
+
+/* card css */
+
+
+
+.internship_list_container .individual_internship .internship_meta .individual_internship_details .internship_other_details_container .other_detail_item_row .other_detail_item.large_stipend_text {
+    margin-right: 24px;
+}
+.internship_list_container .individual_internship .internship_meta .individual_internship_details .internship_other_details_container .other_detail_item_row .other_detail_item {
+    margin-right: 40px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    font-family: 'Inter var',sans-serif;
+}
+/* .container{
+    max-width: 576px;
+    margin-left: 24px;;
+} */
+.card{
+   background: #fff;
+    padding: 23px;
+    margin-bottom: 24px;
+    border: 1px solid #EEE;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+    border-radius: 6px
+}
+.card .company-name{
+    color: #484848;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    line-height: 1.33;
+    font-size:1.2rem;
+   
+}
+.intern_header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:24px;
+}
+.intern_info{
+       margin-bottom:24px;
+}
+.intern_info .location_name a{
+    font-family: 'Inter var',sans-serif;
+    line-height: 22px;
+    color: #333;
+    font-family: Inter,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    font-size:0.92rem
+} 
+.internship_other_details_container {
+    display: flex;
+}
+.other_detail_item_row .other_detail_item .item_heading {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #8A8A8A;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+}
+.other_detail_item_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.other_detail_item.large_stipend_text {
+    margin-right: 24px;
+    font-size:0.92rem
+}
+.item_body{
+    line-height: 3;
+}
+i {
+    margin-right: 4px;
+   margin-top:2px;
+}
+fas{
+    font-size:16px !important;
+}
+.location_name{
+display:flex;
+}
+.button_container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.label_container{
+    padding: 6px 12px;
+    background: #dfdfdf;
+    border-radius: 14px;
+    font-size: 14px;
+    color: #424141;
+    line-height: 16px;
+    margin-right: 8px;
+}
+.view_detail_button{
+     margin-top: 20px;
+    align-self: center;
+    display: flex;
+    padding: 8px;
+    margin-left: auto;
+    padding-right: 0;
+     font-size:0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #008BDC;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right:30px;
+
+}
+.fa-chevron-right{
+    margin-left: 4px;
+    margin-top:4px;
+    font-size:0.7rem;
+}
+
+.individual_internship_header, .internship_logo img {
+    max-width: 104px;
+    max-width: 104px;
+    max-height: 48px;
+    color: transparent;
+}
+
+/* card css end */
+
+.intership_company_heading{
+  text-align: center;
+
+}
+.company-container{
+  margin-top:50px !important;
+}
+.alert{
+  margin-bottom:0rem !important;
+}
+
+
+
+/* profile */
+
+
+.emp-profile{
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+.profile-img{
+  text-align: center;
+}
+.profile-img img{
+  width: 70%;
+  height: 100%;
+}
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+.profile-head h5{
+  color: #333;
+}
+.profile-head h6{
+  color: #0062cc;
+}
+.profile-edit-btn{
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+.proile-rating{
+  font-size: 12px;
+  color: #818182;
+  margin-top: 5%;
+}
+.proile-rating span{
+  color: #495057;
+  font-size: 15px;
+  font-weight: 600;
+}
+.profile-head .nav-tabs{
+  margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+  font-weight:600;
+  border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+  border: none;
+  border-bottom:2px solid #0062cc;
+}
+.profile-work{
+  padding: 14%;
+  margin-top: -15%;
+}
+.profile-work p{
+  font-size: 12px;
+  color: #818182;
+  font-weight: 600;
+  margin-top: 10%;
+}
+.profile-work a{
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
+  font-size: 14px;
+}
+.profile-work ul{
+  list-style: none;
+}
+.profile-tab label{
+  font-weight: 600;
+}
+.profile-tab p{
+  font-weight: 600;
+  color: #0062cc;
 }
