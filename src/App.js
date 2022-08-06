@@ -21,12 +21,7 @@ import { useCookies } from "react-cookie";
 
 import "./App.css";
 function App() {
-  const [cookies, setCookie] = useCookies(["user"]);
-  setCookie("name", "vihaan", {
-    path: "/",
-    expires: new Date(Date.now() + 1000 * 60 * 60 * 24 * 14),
-    httpOnly: true,
-  });
+ 
   return (
     <div className="App">
       <Companyshowstate>
